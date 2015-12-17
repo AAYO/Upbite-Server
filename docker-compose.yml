@@ -1,0 +1,9 @@
+node:
+    build: .
+    # volumes: TODO
+    ports:
+        - '4001:4001'
+    links:
+        - 'redis'
+redis:
+    image: redis:3.0.5
